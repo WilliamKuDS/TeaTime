@@ -37,3 +37,9 @@ h1{
     background-color: #9dd5d0;
     padding: 5% 30%;
 }
+
+@media (max-width: 600px){
+    teatime-logo{
+        max-width:90px;
+    }
+}
