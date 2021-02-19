@@ -38,8 +38,8 @@ h1{
     padding: 5% 30%;
 }
 
-@media (max-width: 1028px){
+@media (max-width: 1440px){
     .teatimelogo{
-        max-width:90px;
+        max-width:10px;
     }
 }
