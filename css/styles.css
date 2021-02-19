@@ -39,7 +39,7 @@ h1{
 }
 
 @media (max-width: 600px){
-    teatime-logo{
+    teatimelogo{
         max-width:90px;
     }
 }
