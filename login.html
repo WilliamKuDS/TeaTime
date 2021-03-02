@@ -16,7 +16,9 @@
   <!-- Bootstrap core CSS -->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
 
   <style>
     .bd-placeholder-img {
@@ -42,7 +44,7 @@
 
 <body class="text-center">
 
-  <form class="form-signin">
+  <form class="form-signin" id="login-div">
     <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
     <label for="inputEmail" class="sr-only">Email address</label>
@@ -58,13 +60,13 @@
     <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
   </form>
 
+  <div id="user-div">
 
-  <script src="index.js"></script>
+    <h1>You are logged in</h1>
+    <p id="user_para">Welcome</p>
+  </div>
 
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-
+  
   <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
@@ -85,6 +87,8 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
   </script>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
