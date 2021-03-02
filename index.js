@@ -15,8 +15,6 @@ firebase.auth().onAuthStateChanged(function (user) {
       document.getElementById("user-div").style.display = "none";
     }
   });
-  // document.getElementById("login-div").style.display = "block";
-  // document.getElementById("user-div").style.display = "none";
   
   function login() {
     var userEmail = document.getElementById("inputEmail").value;
